@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --main-color: #070F2B;
+    --secondary-color: #1B1A55;
+   --undefined-color: #535C91;
+   --another-color: #9290C3;
+   --huh-color: #38419D;
+   --light-color: #3887BE;
+   --xlight-color: #52D3D8;
+   --maybe-color: #3C0753;
+   --more-color: #720455;
+   --done-color: #910A67;
+
+   --main-font: "Berkshire Swash", serif;
+   --next-font: "Space Mono", monospace;
+}
+
+body {
+    background: linear-gradient(45deg, var(--secondary-color), var(--maybe-color), var(--more-color));
+    
+}
+
+.navbar-color {
+    font-family: var(--main-font);
+    background-image: linear-gradient(90deg, var(--done-color), var(--light-color), var(--more-color));
+}
+
+.btn-search {
+    border: 2px solid transparent; /* Define a borda para garantir que a propriedade border-radius funcione */
+    background-image: linear-gradient(45deg, var(--main-color), var(--xlight-color), var(--more-color));
+    background-origin: border-box; /* Faz o gradiente preencher a área da borda */
+    background-clip: padding-box, border-box; /* Define onde o gradiente é aplicado */
+    box-shadow: 0 0 0 2px transparent; /* Define uma sombra para simular a borda com gradiente */
+    color: var(--main-color); /* Define uma cor de texto mais forte */
+    transition: color 0.3s; /* Adiciona uma transição suave para a cor do texto */
+}
+
+.btn-search::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--main-color), var(--xlight-color), var(--more-color));
+    z-index: -1;
+    border-radius: inherit; /* Herda o border-radius do botão */
+}
+.carousel-custom {
+    height: 15rem;
+}
+
+.card {
+    font-family: var(--next-font);
+}
+
+.card-body {
+    background-color: var(--light-color);
+}

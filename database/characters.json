@@ -1,0 +1,36 @@
+{
+    "characters": [
+        {
+            "name": "Wanderer",
+            "normalAtkLevel": 1,
+            "elementalSkillLevel": 1,
+            "elementalBurstLevel": 1,
+            "talentType": "Praxis",
+            "pic": "../app/assets/img/scara.png"
+        },
+        {
+            "name": "Xiao",
+            "normalAtkLevel": 1,
+            "elementalSkillLevel": 1,
+            "elementalBurstLevel": 1,
+            "talentType": "Prosperty",
+            "pic": "../app/assets/img/scara.png"
+        },
+        {
+            "name": "Ganyu",
+            "normalAtkLevel": 1,
+            "elementalSkillLevel": 1,
+            "elementalBurstLevel": 1,
+            "talentType": "Dilligence",
+            "pic": "../app/assets/img/scara.png"
+        },
+        {
+            "name": "Layla",
+            "normalAtkLevel": 1,
+            "elementalSkillLevel": 1,
+            "elementalBurstLevel": 1,
+            "talentType": "Ingenuity",
+            "pic": "../app/assets/img/scara.png"
+        }
+    ]
+}
