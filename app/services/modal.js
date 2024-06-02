@@ -1,10 +1,10 @@
-import { characters } from "../../database/characters.js";
+import createModalBodyContent from "./modalBody.js";
 
 //elemento pai do modal: 'card-body'
-
+//usar while pra criar os options
 //Não esquecer do footer do modal
 
-function makeModal(parent, title){
+function makeModal(parent, title, currentSkillLevel){
     const modalDiv = document.createElement('div')
     modalDiv.className = 'modal fade'
     modalDiv.id = title.toLowerCase()
@@ -37,6 +37,27 @@ function makeModal(parent, title){
     modalHeaderBtn.setAttribute('data-bs-dismiss', 'modal')
     modalHeaderBtn.setAttribute('aria-label', 'close')
     modalHeader.appendChild(modalHeaderBtn)
+
+    const modalBody = document.createElement('div')
+    modalBody.className = 'modal-body'
+    modalContent.appendChild(modalBody)
+
+    //parent do modalbody é o modalcontent
+    createModalBodyContent(modalBody, 'normal-atk', 'Normal Atack', currentSkillLevel.normalAtkLevel)
+    createModalBodyContent(modalBody, 'elemental-skill', 'Elemental Skill', currentSkillLevel.elementalSkillLevel)
+    createModalBodyContent(modalBody, 'elemental-burst', 'Elemental Burst', currentSkillLevel.elementalBurstLevel)
+
+    const modalFooter = document.createElement('div')
+    modalFooter.className = 'modal-footer'
+    modalContent.appendChild(modalFooter)
+
+    const modalFooterBtn = document.createElement('button')
+    modalFooterBtn.className = 'btn btn-secondary'
+    modalFooterBtn.setAttribute('type', 'button')
+    modalFooterBtn.setAttribute('data-bs-dismiss', 'modal')
+    modalFooterBtn.textContent = 'Close'
+    modalFooter.appendChild(modalFooterBtn)
+
 }
 
 export default makeModal;
