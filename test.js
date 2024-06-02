@@ -1,4 +1,8 @@
+import { characters } from "./database/characters.js";
+
 console.log("É O ELECTRON GARAI KKKk");
+console.log(characters[0].characterName)
+console.log(characters[1].pic)
 
 const btn = document.querySelector('.btn');
 let btnMode = false;
@@ -20,3 +24,4 @@ btn.addEventListener('click', () => {
         return btnMode = false;
     }
 })
+

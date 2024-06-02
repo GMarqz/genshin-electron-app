@@ -6,6 +6,7 @@
             "elementalSkillLevel": 1,
             "elementalBurstLevel": 1,
             "talentType": "Praxis",
+            "description": "Wanderer build is getting close to the end, soon he'll be ready for anything!",
             "pic": "../app/assets/img/scara.png"
         },
         {
@@ -14,7 +15,8 @@
             "elementalSkillLevel": 1,
             "elementalBurstLevel": 1,
             "talentType": "Prosperty",
-            "pic": "../app/assets/img/scara.png"
+            "description": "He's doing good, but can be better!",
+            "pic": "../app/assets/img/wrios.png"
         },
         {
             "name": "Ganyu",
@@ -22,7 +24,8 @@
             "elementalSkillLevel": 1,
             "elementalBurstLevel": 1,
             "talentType": "Dilligence",
-            "pic": "../app/assets/img/scara.png"
+            "description": "She's perfect",
+            "pic": "../app/assets/img/ganyu.png"
         },
         {
             "name": "Layla",
@@ -30,6 +33,7 @@
             "elementalSkillLevel": 1,
             "elementalBurstLevel": 1,
             "talentType": "Ingenuity",
+            "description": "",
             "pic": "../app/assets/img/scara.png"
         }
     ]
