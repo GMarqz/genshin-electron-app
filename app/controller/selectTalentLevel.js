@@ -1,10 +1,10 @@
 import generateParagraphContent from "../services/selectTalentLevel.js";
 
 
-function initSelectTalentLevel(){
+function initSelectTalentLevel(talentMaterialClassName){
     document.addEventListener("DOMContentLoaded", function () {
         const selectElement = document.getElementById("inputGroupSelect02");
-        const displayElement = document.querySelector(".normal-atk-materials");
+        const displayElement = document.querySelector(talentMaterialClassName);
 
         selectElement.addEventListener("change", function () {
             const selectedValue = parseInt(selectElement.value);

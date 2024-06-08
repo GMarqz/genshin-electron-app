@@ -1,3 +1,5 @@
+import initSelectTalentLevel from "../../controller/selectTalentLevel.js";
+
 function createModalBodyContent(parent, divClassName, skill, currentSkillLevel) {
 
     const modalBodyDivChildren = document.createElement('div')
@@ -37,8 +39,9 @@ function createModalBodyContent(parent, divClassName, skill, currentSkillLevel) 
     }
 
     const materialQuantity = document.createElement('p')
-    materialQuantity.className = `${divClassName}-materials`
-    materialQuantity.textContent = '22 so pra teste'
+    const divClassNameMaterials = `${divClassName}-materials`
+    materialQuantity.className = divClassNameMaterials
+    materialQuantity.textContent = initSelectTalentLevel(divClassNameMaterials)
     modalBodyDivChildren.appendChild(materialQuantity)
 
 }

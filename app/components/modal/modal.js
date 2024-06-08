@@ -1,8 +1,6 @@
 import createModalBodyContent from "./modalBody.js";
 
 //elemento pai do modal: 'card-body'
-//usar while pra criar os options
-//Não esquecer do footer do modal
 
 function makeModal(parent, title, currentSkillLevel){
     const modalDiv = document.createElement('div')

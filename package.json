@@ -5,11 +5,16 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "compile": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Marqz",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^30.0.9"
+    "@types/electron": "^1.6.10",
+    "@types/node": "^20.14.0",
+    "electron": "^30.0.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   }
 }
