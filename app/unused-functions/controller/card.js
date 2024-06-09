@@ -1,5 +1,5 @@
 import makeCard from "../services/Card.js";
-import { characters } from "../../database/characters.js";
+import { characters } from "../characters.js";
 import makeModal from "../services/modal.js";
 
 function initCardInstance(parent) {

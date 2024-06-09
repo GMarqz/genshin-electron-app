@@ -1,4 +1,4 @@
-import generateParagraphContent from "../services/selectTalentLevel.js";
+import generateParagraphContent from "./selectTalentLevel.js";
 
 
 function initSelectTalentLevel(talentMaterialClassName){
