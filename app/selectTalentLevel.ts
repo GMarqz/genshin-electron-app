@@ -11,8 +11,8 @@ const levels = [
     16
 ]
 
-function generateParagraphContent(level) {
-    let talentMaterialRarity;
+function generateParagraphContent(level: any) {
+    let talentMaterialRarity: string;
 
     if (level == 1) {
         talentMaterialRarity = 'teachings';
